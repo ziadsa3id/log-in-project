@@ -1,0 +1,339 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image:linear-gradient(to right , rgb(255, 255, 255 , 0.5) , rgb(135, 135, 218 , 0.5) ) ;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.box-login{
+    width: 65%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 17.5%;
+    top: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(88, 87, 87, 0.5);
+    
+    /* overflow: hidden; */
+}
+.box-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.box-left h1{
+    text-align: center;
+    position: absolute;
+    left: 23%;
+    top: 10%;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15%;
+    top: 31%;   
+}
+.icon p{
+    margin: 0 5px;
+    width: 41px;
+    height: 28px;
+    border-radius: 9px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #ccc5c5
+}
+.box-left h5{
+    position: absolute;
+    left: 18%;
+    color: gray;
+    top: 38%;
+}
+.log-in-email{
+    padding: 11px;
+    width: 33%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 10%;
+    top: 51%;
+    background-color: gainsboro;
+    border: none;
+    transition: 1s;
+}
+.log-in-password{
+    padding: 11px;
+    width: 33%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 10%;
+    top: 64%;
+    background-color: gainsboro;
+    border: none;
+    transition: 1s;
+}
+.log-in-email:hover,
+.log-in-password:hover{
+    background-color: white;
+    border: 0.5px solid gainsboro;
+}
+.log-in{
+    position: absolute;
+    top: 80%;
+    background-color: blueviolet;
+    width: 20%;
+    padding: 10px;
+    height: 40px;
+    left: 18%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+}
+.log-in:hover{
+    background-color: rgb(188, 132, 241);
+}
+
+/*/////////box-right*/
+.box-right{
+    z-index: 1;
+    color: white;
+}
+.box-right::after{
+    content: "";
+    position: absolute;
+    background-color: blueviolet;
+    width: 46%;
+    right: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+
+}
+.box-right h1{
+    position: absolute;
+    left: 68%;
+    top: 20%;
+    font-size: 35px;
+}
+.box-right h5 {
+    position: absolute;
+    left: 63%;
+    top: 38%;
+    color: rgb(240 233 233);
+    font-weight: 300;
+}
+.sign-up-btn{
+    position: absolute;
+    top: 67%;
+    background-color: blueviolet;
+    width: 20%;
+    padding: 10px;
+    height: 40px;
+    left: 64%;
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    border: 1px solid white;
+}
+.sign-up-btn:hover{
+    background-color: rgb(246, 246, 247);
+    color: black;
+}
+
+.action{
+    transform: translateX(-700px);
+}
+
+
+/*///////////////////////////////////////////////////////////"box-sign-up"*/
+.box-sign-up{
+    width: 65%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 63.5%;
+    bottom: 288px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(88, 87, 87, 0.5);
+    overflow: hidden;
+    opacity: 0;
+}
+.box-left-sign-up{
+    z-index: 1;
+    color: white;
+    animation-name: action;
+    /* animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+/* @keyframes action{
+    0% {
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+} */
+.box-left-sign-up::after{
+    content: "";
+    position: absolute;
+    background-color: blueviolet;
+    width: 46%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+.box-left-sign-up h1 {
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    font-size: 35px;
+}
+.box-left-sign-up h5{
+    position: absolute;
+    left: 12%;
+    top: 38%;
+    color: rgb(240 233 233);
+    font-weight: 300; 
+}
+.sign-in-btn{
+    position: absolute;
+    top: 67%;
+    background-color: blueviolet;
+    width: 20%;
+    padding: 10px;
+    height: 40px;
+    left: 12%;
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    border: 1px solid white;
+}
+.sign-in-btn:hover{
+    background-color: rgb(246, 246, 247);
+    color: black;
+}
+.box-right-sign-up h1{
+    text-align: center;
+    position: absolute;
+    right: 13%;
+    top: 1%;
+    font-size: 36px;
+}
+.box-right-sign-up h5{
+    text-align: center;
+    position: absolute;
+    right: 21%;
+    top: 25%;
+    font-weight: 300;
+    color: gray;
+}
+.icon-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 17%;
+    top: 21%;
+}
+.icon-up p{
+    margin: 0 5px;
+    width: 41px;
+    height: 28px;
+    border-radius: 9px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #ccc5c5
+}
+.sign-up-name{
+    padding: 11px;
+    width: 33%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right:10%;
+    top: 38%;
+    background-color: gainsboro;
+    border: none;
+    transition: 1s;
+}
+.sign-up-email{
+    padding: 11px;
+    width: 33%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10%;
+    top: 52%;
+    background-color: gainsboro;
+    border: none;
+    transition: 1s;
+}
+.sign-up-password{
+    padding: 11px;
+    width: 33%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10%;
+    top: 65%;
+    background-color: gainsboro;
+    border: none;
+    transition: 1s;
+}
+.sign-up-name:hover,
+.sign-up-email:hover,
+.sign-up-password:hover{
+    background-color: white;
+    border: 0.5px solid gainsboro;
+} 
+.sign-in-box-sign-up{
+    position: absolute;
+    top: 81%;
+    background-color: blueviolet;
+    width: 20%;
+    padding: 10px;
+    height: 40px;
+    right: 19%;
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    border: 1px solid white;
+}
+.sign-in-box-sign-up:hover{
+    background-color: rgb(188, 132, 241);
+}
+.active-log-in{
+background-color: beige;
+text-align: center;
+line-height: 50%;
+font-size: 50px;
+
+}
+.loog-in{
+    font-size: 50PX;
+    text-align: center;
+    line-height: 200PX;
+}

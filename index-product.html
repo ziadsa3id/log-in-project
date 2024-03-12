@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-product.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="log-out">LOG OUT</a>
+    <h2>CRUDS Operating System</h2>
+    <div class="container">
+        
+        <label>PRODUCT NAME</label>
+        <input type="text" class="input-data" id="name"> 
+        <label>PRODUCT PRICE</label>
+        <input type="number" class="input-data" id="price"> 
+        <label>PRODUCT CATEGORY</label>
+        <input type="text" class="input-data" id="cat"> 
+        <label>PRODUCT DESCRIPTION</label>
+        <input type="text" class="input-data" id="des"> 
+        <button class="input-btn" id="btn">Add Product</button>
+        <button class="update-btn" id="update-data">update data</button>
+        <input class="input-search" id="searchBar" type="search" placeholder="search">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="info">
+
+            </tbody>
+        </table>
+    </div>    
+    <script src="script-product.js"></script>
+</body>
+</html>

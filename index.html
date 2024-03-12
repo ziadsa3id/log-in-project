@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="boxLogin" class="box-login"> 
+        <div class="box-left">
+        <h1>Log in</h1>
+        <div class="icon">
+            <p>
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                </p>
+                <p>
+                <span><i class="fa fa-github" aria-hidden="true"></i></span>
+                </p> 
+                <p>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                </p>
+                <p>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                </p>
+        </div>
+            <h5>Or use youe email password</h5>
+            <!-- <input class="log-in-email" id="logEmail" type="email" placeholder="Email"> -->
+            <input class="log-in-email" id="logEmail" type="email" placeholder="Email">
+            <input class="log-in-password" id="logPassword" type="password" placeholder="*****">
+            <button class="log-in" id="logIn">LOG IN </button>
+            
+            <div class="box-right">
+                <div class="over-lay"></div>
+                <h1>Hello </h1>
+                <h5>Register with your personal details <br>to use all of site features</h5>
+                <button id="signUpBtn" class="sign-up-btn">SIGN UP</button>
+            </div>
+            
+        </div>
+        
+<!-- space -->
+
+
+    </div>
+        
+        <p id="whenLogIn" style="text-align: center;
+        font-size: 50px;
+        position: relative;
+        bottom: 200px;
+        right: 3%;"></p>
+
+        <p id="whenLog" style="text-align: center;
+        font-size: 50px;
+        position: relative;
+        bottom: 150px;
+        right: 3%;"></p>
+        <p style="color: red;
+        position: relative;
+        left: 29%;
+        top: 49px;
+        font-size: 14px;" id="wrongPassword"></p>
+
+
+
+    <div class="box-sign-up" id="boxSignUp">
+        <div class="box-left-sign-up">
+            <h1>Welcome Back! </h1>
+            <h5>Enter your personal details to use <br>all of site features</h5>
+            <button id="signInBtn" class="sign-in-btn">SIGN IN</button>   
+        </div>
+        <div class="box-right-sign-up">
+        
+            <h1>Create Account</h1>        
+            <div class="icon-up">
+            
+                <p>
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                </p>
+                <p>
+                <span><i class="fa fa-github" aria-hidden="true"></i></span>
+                </p> 
+                <p>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                </p>
+                <p>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                </p>
+        
+            </div>
+            <h5>or use your email for registeration</h5>
+            <input class="sign-up-name" id="signName" type="text" placeholder="Name">
+            <input class="sign-up-email" id="signEmail" type="email" placeholder="Email">
+            <input class="sign-up-password" id="signPassword" type="password" placeholder="password">
+            <button class="sign-in-box-sign-up" id="signUp">SIGN UP </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
